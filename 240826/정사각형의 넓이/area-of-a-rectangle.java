@@ -5,6 +5,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println((n<5)? "tiny" : n*n);
+        System.out.println(n*n);
+        if(n<5){
+            System.out.prinln("tiny");
+        }
     }
 }
