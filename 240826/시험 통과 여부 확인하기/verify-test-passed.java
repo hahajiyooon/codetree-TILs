@@ -5,6 +5,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println((n<80)? 80-n+"more score" : "pass");
+        System.out.println((n<80)? 80-n+" more score" : "pass");
     }
 }
