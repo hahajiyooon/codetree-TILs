@@ -8,12 +8,12 @@ public class Main {
         int i = 0;
 
         if(c.equals("A")){
-            while(i++ < n){
-                System.out.print(i+" ");
+            while(i < n){
+                System.out.print(++i +" ");
             }
         }else{
-            while(i++ < n){
-                System.out.print(n-i+" ");
+            while(i < n){
+                System.out.print(n-i++ +" ");
             }
         }
 
