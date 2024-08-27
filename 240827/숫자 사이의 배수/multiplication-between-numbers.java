@@ -17,10 +17,9 @@ public class Main {
         }
 
         avg = sum/cnt;
-        
-        if(avg*100%10 >= 5) avg += 0.1;
+
         
         System.out.print(sum+" ");
-        System.out.printf("%.1f",avg);
+        System.out.printf("%.1f",avg*10/10.0);
     }
 }
