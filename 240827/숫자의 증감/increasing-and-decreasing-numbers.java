@@ -7,8 +7,14 @@ public class Main {
         int n = sc.nextInt();
         int i = 0;
 
-        while(i++ < n){
-                System.out.print(c.equals("A")? i+" " : n-i+" ");            
+        if(c.equals("A")){
+            while(i++ < n){
+                System.out.print(i+" ");
+            }
+        }else{
+            while(i++ < n){
+                System.out.print(n-i+" ");
+            }
         }
 
     }
