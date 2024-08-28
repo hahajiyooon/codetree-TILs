@@ -7,12 +7,12 @@ public class Main {
         boolean flag = false;
 
         for(int i=2; i<n; i++){
-            if(n%i != 0){
+            if(n%i == 0){
                 flag = true;
                 break;
             }
-        }
+        }//598 C
 
-        System.out.print(flag? "P" : "C");
+        System.out.print(flag? "C" : "P");
     }
 }
