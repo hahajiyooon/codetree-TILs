@@ -7,7 +7,7 @@ public class Main {
 
         for(int i=1; i<=n; i++){
             for(int j=0; j<n; j++){
-                System.out.print(i*4-j*i + " ");
+                System.out.print(i*n-j*i + " ");
             }
             System.out.println();
         }
