@@ -8,7 +8,7 @@ public class Main {
         //짝, 홀에 따른 별 구성 체크
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                if(i == 0 || j%2 == 0 && j>=i){
+                if(i == 0 || (j%2 == 1 && j>=i)){
                     System.out.print("* ");
                 }else{
                     System.out.print("  ");
