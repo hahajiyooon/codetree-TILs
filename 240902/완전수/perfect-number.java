@@ -7,8 +7,10 @@ public class Main {
         int e = sc.nextInt();
         int sum = 0;
         int cnt = 0;
-
+//7 
+//8 > 1 2 4
         for(int i=s; i<=e; i++){
+            sum = 0;
             for(int j=1; j<i; j++){
                 if(i%j==0) sum += j;
             }
