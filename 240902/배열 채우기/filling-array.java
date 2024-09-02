@@ -7,8 +7,9 @@ public class Main {
         int n = 0;
         int idx = 0;
 
-        while((n = sc.nextInt()) != 0){
-            arr[idx++] = n;
+        for(int i=0; i<10; i++){
+            arr[i] = sc.nextInt();
+            if(arr[i] == 0) break;
         }
         
         for(int i=9; i>-1; i--){
