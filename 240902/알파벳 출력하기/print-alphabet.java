@@ -8,8 +8,8 @@ public class Main {
 
         for(int i=0; i<n; i++){
             for(int j=0; j<i+1; j++){
-                System.out.print((char)(c++));
                 if((char)c == 'Z') c ='A';
+                System.out.print((char)(c++));
             }
             System.out.println();
         }
