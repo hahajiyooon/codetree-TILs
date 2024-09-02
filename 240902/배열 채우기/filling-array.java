@@ -10,7 +10,7 @@ public class Main {
         while((n = sc.nextInt()) != 0){
             arr[idx++] = n;
         }
-
+        
         for(int i=9; i>-1; i--){
             if(arr[i] != 0) System.out.print(arr[i]+" ");
         }
