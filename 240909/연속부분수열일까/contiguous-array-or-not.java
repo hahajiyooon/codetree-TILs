@@ -8,7 +8,7 @@ public class Main {
         int[] arrA = new int[n1];
         int[] arrB = new int[n2];
         int idx = -1 ;
-        boolean flag = true;
+        int cnt = 0;
 
         //행렬에 입력된 값 넣어주기
         for(int i=0; i<n1; i++){
@@ -20,21 +20,27 @@ public class Main {
         }
 
         //arrB[0]과 일치하는 arrA의 인덱스값 구하기
-        for(int i=0; i<n1; i++){
-            if(arrB[0] == arrA[i]) idx = i;
-        }
-
         //연속 부분 수열인지 체크
-        //arrA 배열에 arrB[0] 원소가 없을 경우도 고려
-        if(idx == -1){
-            flag = false;
-        }else{
-            for(int i=idx; i<=n2; i++){
-                if(arrB[i-idx] != arrA[i])  flag = false;
-            }
-        }
+        for(int i=0; i<n1; i++){
+            if(arrB[0] == arrA[i]) {
+                idx = i;
+                cnt = 0;
 
-        System.out.print(flag? "Yes" : "No");
+                for(int j=idx; j<=n2; j++){
+                    if(arrB[j-idx] != arrA[j])  {
+                        break;
+                    }else{
+                        cnt++;
+                    }
+                }//for
+
+                if(cnt == n2){
+                    break;
+                }
+            }//if
+        }//for
+
+        System.out.print( cnt == n2? "Yes" : "No");
 
     }
 }
