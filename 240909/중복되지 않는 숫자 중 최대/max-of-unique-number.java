@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int[] cnt = new int[1000];
+        int[] cnt = new int[1001];
         int result = -1;
 
         for(int i=0; i<n; i++){
@@ -14,7 +14,7 @@ public class Main {
             cnt[arr[i]]++;
         }
 
-        for(int i=999; i>-1; i--){
+        for(int i=1000; i>-1; i--){
             if(cnt[i] == 1) {
                 result = i;
                 break;
