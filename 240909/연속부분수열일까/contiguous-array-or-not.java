@@ -7,7 +7,7 @@ public class Main {
         int n2 = sc.nextInt();
         int[] arrA = new int[n1];
         int[] arrB = new int[n2];
-        int idx = 0 ;
+        int idx = -1 ;
         boolean flag = true;
 
         //행렬에 입력된 값 넣어주기
@@ -25,8 +25,13 @@ public class Main {
         }
 
         //연속 부분 수열인지 체크
-        for(int i=idx; i<=n2; i++){
-            if(arrB[i-idx] != arrA[i])  flag = false;
+        //arrA 배열에 arrB[0] 원소가 없을 경우도 고려
+        if(idx == -1){
+            flag = false;
+        }else{
+            for(int i=idx; i<=n2; i++){
+                if(arrB[i-idx] != arrA[i])  flag = false;
+            }
         }
 
         System.out.print(flag? "Yes" : "No");
