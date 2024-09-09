@@ -10,7 +10,7 @@ public class Main {
         int[] cnt = new int[10];
         int sum = 0;
 
-        while(a != 0){
+        while(a > 1){
             quotient = a/b;
             remainder = a%b;
             a = quotient;
@@ -20,6 +20,7 @@ public class Main {
 
         for(int i : cnt){
             sum += i*i;
+            
         }
 
         System.out.print(sum);
