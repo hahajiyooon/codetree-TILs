@@ -36,7 +36,7 @@ public class Main {
         }
 
         System.out.println();
-        System.out.print(sum/6);
+        System.out.printf("%s",sum/6);
 
     }
 }
