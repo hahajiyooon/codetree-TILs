@@ -13,7 +13,7 @@ public class Main {
         for(int i=1; i<n; i++){
             arr[i] = sc.nextInt();
             
-            if(arr[i] < min){
+            if(arr[i] < min && i != n-1){
                 min = arr[i];
                 idx = i; 
             }
