@@ -7,7 +7,7 @@ public class Main {
         String s1 = sc.next();
         String s2 = sc.next();
 
-        System.out.print(s1.length() => s2.length()?
+        System.out.print(s1.length() >= s2.length()?
                                 s1+" "+s1.length() : s2+" "+s2.length());        
     }
 }
