@@ -6,8 +6,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String s1 = sc.next();
         String s2 = sc.next();
-
-        System.out.print(s1.length() >= s2.length()?
-                                s1+" "+s1.length() : s2+" "+s2.length());        
+      
+        if(s1.length() > s2.length()){
+            System.out.print(s1+" "+s1.length());
+        }else if(s1.length() < s2.length()){
+            System.out.print(s2+" "+s2.length());
+        }else{
+            System.out.print("same");
+        }
     }
 }
