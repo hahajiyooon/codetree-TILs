@@ -6,9 +6,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         int n = sc.nextInt();
-        int endIdx = (n < str.length())? str.length()-1 : -1;
+        int startIdx = str.length()-1;
+        int endIdx = (n < str.length())? startIdx-n : -1;
 
-        for(int i=endIdx; i>endIdx-n; i--){
+        for(int i=startIdx; i>endIdx; i--){
             System.out.print(str.charAt(i));
         }
     }
