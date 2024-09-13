@@ -24,6 +24,7 @@ public class Main {
                 if(input[i].charAt(j) == check) {
                     cnt++;
                     sum += leng;
+                    break;
                 }
             }
         }
