@@ -6,6 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String[] arr = new String[10];
         char match ;
+        boolean flag = false;
 
         for(int i=0; i<10; i++){
             arr[i] = sc.next();
@@ -15,9 +16,12 @@ public class Main {
         for(int i=0; i<10; i++){
             if(arr[i].charAt(arr[i].length()-1) == match) {
                 System.out.println(arr[i]);
+                flag = true;
             }
         }
 
-
+        if(!flag){
+            System.out.println("None");
+        }
     }
 }
