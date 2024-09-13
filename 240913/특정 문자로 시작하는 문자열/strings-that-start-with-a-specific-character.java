@@ -20,13 +20,10 @@ public class Main {
         for(int i=0; i<n; i++){
             leng = input[i].length();
             
-            for(int j=0; j<leng; j++){
-                if(input[i].charAt(j) == check) {
+                if(input[i].charAt(0) == check) {
                     cnt++;
                     sum += leng;
-                    break;
                 }
-            }
         }
 
         System.out.printf("%d %.2f",cnt,(double)sum/cnt);
