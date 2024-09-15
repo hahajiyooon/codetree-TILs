@@ -7,10 +7,11 @@ public class Main {
         int leng = str.length();
         int q = sc.nextInt();
         int type = 0;
-        String reverse = "";
+        String reverse;
 
         for(int i=0; i<q; i++){
             type = sc.nextInt();
+            reverse = "";
 
             if(type == 1){
                 str = str.substring(1)+str.substring(0,1);
