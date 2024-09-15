@@ -8,13 +8,13 @@ public class Main {
         if(str.contains("ee")){
             System.out.print("Yes ");
         }else{
-            System.out.print("No");
+            System.out.print("No ");
         }
 
         if(str.contains("ab")){
             System.out.print("Yes ");
         }else{
-            System.out.print("No");
+            System.out.print("No ");
         }
         
     }
