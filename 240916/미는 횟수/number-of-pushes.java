@@ -8,7 +8,7 @@ public class Main {
         int cnt = 0;
         boolean match = false;
 
-        for(int i=0; i<a.length(); i++){
+        for(int i=0; i<=a.length(); i++){
             if(a.equals(b)) {
                 match = true;
                 break;
