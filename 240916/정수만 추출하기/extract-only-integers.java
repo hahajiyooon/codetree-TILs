@@ -13,7 +13,7 @@ public class Main {
         for(int i=0; i<cA.length; i++){
             if(cA[i] < '0' || cA[i] > '9') {
                 sum += Integer.parseInt(a.substring(0, a.indexOf(cA[i])));
-                true;
+                flag = true;
                 break;
             }
         }
@@ -26,7 +26,7 @@ public class Main {
         for(int i=0; i<cB.length; i++){
             if(cB[i] < '0' || cB[i] > '9') {
                 sum += Integer.parseInt(b.substring(0, b.indexOf(cB[i])));
-                true;
+                flag = true;
                 break;
             }
         }
