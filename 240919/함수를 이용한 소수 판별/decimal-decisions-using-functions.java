@@ -5,9 +5,11 @@ public class Main {
         boolean decimal = true;
         int s = 0;
 
+        if(b == 1) return 0;
+
         for(int i=a; i<=b; i++){
             decimal = true;
-            
+
             for(int j=2; j<i; j++){
                 if(i%j == 0) {
                     decimal = false; 
