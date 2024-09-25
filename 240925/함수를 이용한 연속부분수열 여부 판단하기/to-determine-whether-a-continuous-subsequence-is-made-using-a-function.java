@@ -11,10 +11,9 @@ public class Main {
             if(idx >= a.length) return false;
 
             if(a[idx] == b[0]) {
-                first = idx;
                 for(int i=0; i<b.length; i++){
                     if(a[idx+i] != b[i]){
-                        return false;
+                        break;
                     }
                 }//for
                 return true;
