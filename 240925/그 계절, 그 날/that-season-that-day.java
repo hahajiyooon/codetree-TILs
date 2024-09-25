@@ -34,7 +34,7 @@ public class Main {
     public static String season(int m){
         String name = "";
         
-        switch(m/4){
+        switch(m/3){
             case 1 : name  = "Spring"; break;
             case 2 : name  = "Summer"; break;
             case 3 : name  = "Fall"  ; break;
