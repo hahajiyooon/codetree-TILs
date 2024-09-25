@@ -9,8 +9,16 @@ public class Main {
 
         //m=2일경우 윤년인지 아닌지 고려
         if(m == 2){
-            if(y%4 == 0 && y%100 != 0 || y%400 == 0){
+            if(y%4 == 0){
                 flag = true;
+
+                if(y%100 == 0) {
+                    flag = false;
+                    
+                    if(y%400 == 0){
+                        flag = true;
+                    }
+                }
             }
         }
 
@@ -18,6 +26,7 @@ public class Main {
 
         //유효한 년월일인지
         if(dArray[m-1] >= d) return true;
+
 
         return false;
     }
