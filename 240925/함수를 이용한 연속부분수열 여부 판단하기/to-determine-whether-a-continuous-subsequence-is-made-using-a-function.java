@@ -7,6 +7,9 @@ public class Main {
         int idx = 0;
 
         while(true){
+            //a배열에 b[0]가 없는경우
+            if(idx >= a.length) return false;
+
             if(a[idx] == b[0]) {
                 first = idx;
                 for(int i=0; i<b.length; i++){
@@ -20,7 +23,7 @@ public class Main {
             idx++;
         }//while
     }
-    
+
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
