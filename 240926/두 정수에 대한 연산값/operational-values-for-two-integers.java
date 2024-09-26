@@ -17,7 +17,11 @@ public class Main {
         int max = (a>b)? a : b;
         int min = (a<b)? a : b;
 
-        System.out.print(calculB(min)+" "+calculA(max));
+        if(max==a){
+            System.out.print(calculA(max)+" "+calculB(min));
+        }else{
+            System.out.print(calculB(min)+" "+calculA(max));
+        }
 
     }
 }
