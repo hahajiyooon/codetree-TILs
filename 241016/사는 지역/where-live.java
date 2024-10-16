@@ -25,6 +25,7 @@ public class Main {
 
         for(int i=0; i<minLength; i++){
             if(name.charAt(i) > lastName.charAt(i)){
+                lastName = name;
                 return true;
             }
         }
