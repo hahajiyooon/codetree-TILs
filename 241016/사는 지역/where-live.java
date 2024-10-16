@@ -19,17 +19,31 @@ class Person{
 public class Main {
     public static String lastName ;
 
-    //사전순으로 이름이 가장 느린 사람
+    //사전순으로 이름이 가장 느린 사람 찾기
+    //이름이 가장 느린 사람 업데이트가 될 시 리턴값 true
     public static boolean TakeName(String name){
-        int minLength = (lastName.length() < name.length())? lastName.length() : name.length();
+        boolean flag = false;
+        int leng = (name.length() >= lastName.length()) ? lastName.length() : name.length();
 
-        for(int i=0; i<minLength; i++){
+        //1. 길이가 같을때 비교
+        for(int i=0; i<leng; i++){
             if(name.charAt(i) > lastName.charAt(i)){
                 lastName = name;
-                return true;
+                flag = true; // 다른 문자열 발견
+                break;
             }
         }
-        return false;
+
+        //2. abc abcd와 같은 예시일 때
+        if(!flag){
+
+            if(name.length() != lastName.length()){
+                lastName = (name.length() > lastName.length()) ? name : lastName;
+                flag = true;
+            }
+        }
+
+        return flag;
     }
 
     public static void main(String[] args) {
