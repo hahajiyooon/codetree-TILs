@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int x1,x2;
-        int[] stack = new int[100];
+        int[] stack = new int[101];
 
         for(int i=0; i<n; i++){
             x1 = sc.nextInt();
@@ -18,7 +18,7 @@ public class Main {
         }
 
         int max = 0;
-        for(int i=0; i<99; i++){
+        for(int i=0; i<100; i++){
             if(max < stack[i]) max = stack[i];
         }
 
