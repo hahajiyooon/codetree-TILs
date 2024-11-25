@@ -10,7 +10,6 @@ public class Main {
         boolean[][] flag = new boolean[2001][2001];
 
         while(cnt < 3){
-            cnt++; //a,b,m
                 x1 = sc.nextInt()+offset;
                 y1 = sc.nextInt()+offset;
                 x2 = sc.nextInt()+offset;
@@ -29,6 +28,7 @@ public class Main {
                         }
                     }
                 }
+            cnt++; //a,b,m
         }//while
 
     int result = 0;
