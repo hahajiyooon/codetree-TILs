@@ -15,8 +15,8 @@ public class Main {
             x = sc.nextInt();
             y = sc.nextInt();
 
-            for(int a=0; a<x+8; a++){
-                for(int b=0; b<y+8; b++){
+            for(int a=x; a<x+8; a++){
+                for(int b=y; b<y+8; b++){
                     coloredPapaer[a][b] = true;
                 }
             }
