@@ -12,8 +12,8 @@ public class Main {
         boolean [][] coloredPapaer = new boolean[201][201];
 
         for(int i=0; i<n; i++){
-            x = sc.nextInt();
-            y = sc.nextInt();
+            x = sc.nextInt()+offset;
+            y = sc.nextInt()+offset;
 
             for(int a=x; a<x+8; a++){
                 for(int b=y; b<y+8; b++){
