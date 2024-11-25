@@ -35,8 +35,8 @@ public class Main {
         }//while
 
         int cnt = 0;
-        for(int x=x1; x<201; x++){
-            for(int y=y1; y<201; y++){
+        for(int x=0; x<201; x++){
+            for(int y=0; y<201; y++){
                 if(square[x][y]) cnt++;
             }
         }
