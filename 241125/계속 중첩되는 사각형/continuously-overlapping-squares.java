@@ -20,26 +20,23 @@ public class Main {
             y2 = sc.nextInt()+offset;
 
             if(i%2 == 0){
-                flag = false;
                 for(int x=x1; x<x2; x++){
                     for(int y=y1; y<y2; y++){
-                        square[x][y] = flag;
+                        square[x][y] = false;
                     }
                 }
             }else{
-                flag = true;
                 for(int x=x1; x<x2; x++){
                     for(int y=y1; y<y2; y++){
-                        square[x][y] = flag;
+                        square[x][y] = true;
                     }
                 }
-
             }
         }//while
 
         int cnt = 0;
-        for(int x=x1; x<x2; x++){
-            for(int y=y1; y<y2; y++){
+        for(int x=x1; x<201; x++){
+            for(int y=y1; y<201; y++){
                 if(square[x][y]) cnt++;
             }
         }
