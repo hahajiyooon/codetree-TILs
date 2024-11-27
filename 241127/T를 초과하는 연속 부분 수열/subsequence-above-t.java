@@ -26,7 +26,7 @@ public class Main {
             ans = Math.max(ans, cnt);
         }
 
-        System.out.print((ans==1)? 0 : ans);
+        System.out.print((ans == 1 && n != 1)? 0 : ans);
 
     }
 }
