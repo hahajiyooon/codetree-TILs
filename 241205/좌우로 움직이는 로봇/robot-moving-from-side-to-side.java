@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class Main {
-    public static final int offset = 500000;
 
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -12,7 +11,7 @@ public class Main {
         char d;
 
         //a로봇
-        int [] aRobot = new int[1000000];
+        int [] aRobot = new int[1000001];
         int aIdx = 1;
         for(int i=0; i<n; i++){
             t = sc.nextInt();
@@ -29,7 +28,7 @@ public class Main {
         }//for
 
         //b로봇
-        int [] bRobot = new int[1000000];
+        int [] bRobot = new int[1000001];
         int bIdx = 1;
         for(int i=0; i<m; i++){
             t = sc.nextInt();
