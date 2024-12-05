@@ -12,7 +12,7 @@ public class Main {
         char d;
 
         //a로봇
-        int [] aRobot = new int[50000];
+        int [] aRobot = new int[1000000];
         int aIdx = 1;
         for(int i=0; i<n; i++){
             t = sc.nextInt();
@@ -29,7 +29,7 @@ public class Main {
         }//for
 
         //b로봇
-        int [] bRobot = new int[50000];
+        int [] bRobot = new int[1000000];
         int bIdx = 1;
         for(int i=0; i<m; i++){
             t = sc.nextInt();
